@@ -1,6 +1,6 @@
-HTML / CSS
-What is a selector
-Describe the box model
+#HTML / CSS
+What is a selector  
+Describe the box model  
 Describe how you would make a paper card effect in CSS (Like the products on Jane.com)
 What are the different properties for position and how do they work
 What is the difference between caret ( > ) comma ( , ) and space (  ) in a css selector.
@@ -9,7 +9,7 @@ Describe Pseudo selectors in CSS
 How could you make a star using CSS shapes only
 What is the transform property and how does it work
 
-JavaScript
+#JavaScript
 Higher order functions
 What are callback functions
 Describe closures and why they are important
@@ -26,7 +26,7 @@ What is a prototype in JavaScript
 What’s the difference between == and === in JavaScript
 What is event bubbling in the DOM
 
-React
+#React
 What is a component
 What’s the difference between an element and a Component
 What is setState and what does it do
