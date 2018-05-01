@@ -1,5 +1,7 @@
 # HTML / CSS
-What is a selector  
+**What is a CSS selector**
+Selectors are used to select elements within an HTML document and then apply styling to those elements. There are lots of different CSS selectors. Some of the most popular include: .class (class), #id (id), element/type selector (like *div* or *p*), child combinator (div > p), descendant combinator (div p), and attribute selector (img[src] or input[type="text"]).
+
 Describe the box model  
 Describe how you would make a paper card effect in CSS (Like the products on Jane.com)  
 What are the different properties for position and how do they work  
