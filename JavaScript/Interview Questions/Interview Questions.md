@@ -2,7 +2,10 @@
 **What is a CSS selector**  
 Selectors are used to select elements within an HTML document and then apply styling to those elements. There are lots of different CSS selectors. Some of the most popular include: .class (class), #id (id), element/type selector (like *div* or *p*), child combinator (div > p), descendant combinator (div p), and attribute selector (img[src] or input[type="text"]).
 
-Describe the box model  
+**Describe the box model**  
+The box model is used by web broswers to position html elements. Evey html element is represented by a rectangular box. This rectangular box is made up of four parts: content edge, padding edge, border edge, and margin edge. The content edge is the inner most box and contains the html element's content. The padding edge clears space around the content edge. The border edge surrounds the padding edge. The margin edge clears an area around the border edge and creates space between html elements.  
+
+
 Describe how you would make a paper card effect in CSS (Like the products on Jane.com)  
 What are the different properties for position and how do they work  
 What is the difference between caret ( > ) comma ( , ) and space (  ) in a css selector
