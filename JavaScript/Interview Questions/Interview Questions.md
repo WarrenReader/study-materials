@@ -15,7 +15,9 @@ How could you make a star using CSS shapes only
 What is the transform property and how does it work  
 
 # JavaScript
-What are higher order functions  
+**What are higher order functions**  
+Higher order functions are functions which accept a function as an argument and/or return a function as a result.
+
 What are callback functions  
 Describe closures and why they are important  
 Describe context  
