@@ -18,7 +18,9 @@ What is the transform property and how does it work
 **What are higher order functions**  
 Higher order functions are functions which accept a function as an argument and/or return a function as a result.
 
-What are callback functions  
+**What are callback functions**  
+A callback function is a function passed into another function as an argument, which is then invoked inside the outer function. There are both synchronous and asynchronous callbacks.
+
 Describe closures and why they are important  
 Describe context  
 What is hoisting  
