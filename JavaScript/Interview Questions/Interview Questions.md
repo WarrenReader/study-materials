@@ -21,6 +21,9 @@ Higher order functions are functions which accept a function as an argument and/
 **What are callback functions**  
 A callback function is a function passed into another function as an argument, which is then invoked inside the outer function. There are both synchronous and asynchronous callbacks.
 
+**What’s the difference between == and === in JavaScript**  
+== is loose equality and === is strict equality. Loose equality compares two values, but does not compare their data type, but rather uses type coercion. This means if the number 7 and the string "7" were compared using == then JavaScript would coerce "7" to be a number. As a result 7 == "7" would be true. Strict equality compares both type and value. It does not user coercion. This means 7 === "7" is false since we're comparing a number and a string.
+
 Describe closures and why they are important  
 Describe context  
 What is hoisting  
@@ -32,7 +35,6 @@ Describe how scoping works in JavaScript
 What does the statement ‘use strict’ do   
 How does inheritance work in JavaScript  
 What is a prototype in JavaScript  
-What’s the difference between == and === in JavaScript  
 What is event bubbling in the DOM  
 
 # React
