@@ -24,6 +24,13 @@ A callback function is a function passed into another function as an argument, w
 **What’s the difference between == and === in JavaScript**  
 == is loose equality and === is strict equality. Loose equality compares two values, but does not compare their data type, but rather uses type coercion. This means if the number 7 and the string "7" were compared using == then JavaScript would coerce "7" to be a number. As a result 7 == "7" would be true. Strict equality compares both type and value. It does not user coercion. This means 7 === "7" is false since we're comparing a number and a string.
 
+**What is event bubbling in the DOM** 
+When an event (i.e. click, mouseover, etc.) happens on an HTML element, it will trigger any handlers that element may have, then pass the event to its parent. This event 'bubbles' up the chain of ancestors, triggering their handlers as well. This process is called bubbling, because events 'bubble' up the HTML tree until the event hits the document object and sometimes even the window object. It's important to note that not all events bubble. For example, a focus event does not bubble. The element that triggered the event is called the target element, and is accessible through event.target.  
+
+To stop an event from bubbling you can use event.stopPropogation(). This function will stop the event from moving upwards, but will allow the element triggering this function to run all of it's event handlers. To prevent handlers on the current element from running use event.stopImmediatePropogation(). However, you shouldn't stop bubbling without a good reason!  
+
+Bubbling is one phase within event propagation. The first is the capturing phase, followed by the target phase, followed by the bubbling phase.  
+
 Describe closures and why they are important  
 Describe context  
 What is hoisting  
@@ -35,7 +42,7 @@ Describe how scoping works in JavaScript
 What does the statement ‘use strict’ do   
 How does inheritance work in JavaScript  
 What is a prototype in JavaScript  
-What is event bubbling in the DOM  
+
 
 # React
 What is a component  
