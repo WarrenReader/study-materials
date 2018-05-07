@@ -31,9 +31,16 @@ To stop an event from bubbling you can use event.stopPropogation(). This functio
 
 Bubbling is one phase within event propagation. The first is the capturing phase, followed by the target phase, followed by the bubbling phase.  
 
+**What is hoisting**
+Variable and function declarations are put into memory during the compile phase. This allows varabiles and function declarations to be referenced before they are declared in code. Manytimes people describe this action as 'moving declared variables and functions to the top of the scope' (i.e. hoisted), but in reality the code stays in place.
+
+An advantage of this is you can invoke a function before it is declared. However, this does not work with function expressions. The same is true with varaibles. If a variable is declared with var, it can be referenced before it is declared in the code, however, it will have a value of undefined since initializations are not hoisted.
+
+It's important to note the variables declared with let and const are not treated the same as those declared with var. From ECMAScript 2015 -  "let will hoist the variable to the top of the block. However, referencing the variable in the block before the variable declaration results in a ReferenceError. The variable is in a "temporal dead zone" from the start of the block until the declaration is processed."  
+
 Describe closures and why they are important  
 Describe context  
-What is hoisting  
+  
 What’s the difference between a for loop and a for in loop  
 Explain let vs var  
 Describe square bracket notation and when you would use it (hint arrays and objects)  
