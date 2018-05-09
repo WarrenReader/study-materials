@@ -6,8 +6,7 @@ Selectors are used to select elements within an HTML document and then apply sty
 The box model is used by web broswers to position html elements. Evey html element is represented by a rectangular box. This rectangular box is made up of four parts: content edge, padding edge, border edge, and margin edge. The content edge is the inner most box and contains the html element's content. The padding edge clears space around the content edge. The border edge surrounds the padding edge. The margin edge clears an area around the border edge and creates space between html elements.
 
 **What is the position property and what are its values**
-
-
+The position property has 5 expected values which are: static, relative, absolute, fixed, and sticky. Static is the default position for HTML elements and positions the element in the normal flow of the document. A relatively positioned element is positioned according to the normal flow of the document, then it's position is offset relative to itself based on the properties top, right, bottom, and left. The offset does not affect the position of other elements. An absolutely positioned element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any. It's final position is determined by the values top, right, bottom, and left. Fixed elements are removed from the normal document flow and no space is created for the element in the page layout. It's positioned relative to the inital containing block. It's final position is determined by the values top, right, bottom, and left. Sticky elements are positioned according to the normal flow of the document, and then offset relative to its nearest scrolling ancestor and containing block. The offset does not affect the position of any other elements.  
 
 **What is the display property and what are its values**
 
