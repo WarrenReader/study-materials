@@ -7,6 +7,8 @@ The box model is used by web broswers to position html elements. Evey html eleme
 
 **What is the position property and what are its values**
 
+
+
 **What is the display property and what are its values**
 
 Describe how you would make a paper card effect in CSS (Like the products on Jane.com)  
