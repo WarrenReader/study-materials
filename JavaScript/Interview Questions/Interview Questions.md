@@ -45,21 +45,21 @@ It's important to note the variables declared with let and const are not treated
 **Describe closures**  
 A closure is an inner function that has access to the outer (enclosing) function's variables. The closure has three scope chanins: it has access to its own scope, it has access to the outer function's varaibles, and it has access to the global variables. Code Example:
 
-let counter = (function() {
-  let privateCounter = 0;
-  function changeBy(val) {privateCounter += val;}
-  return {
-    increment: function() {changeBy(1)},
-    decrement: function() {changeBy(-1);},
-    value: function() {return privateCounter;}
-  }
-})();
+let counter = (function() {  
+  let privateCounter = 0;  
+  function changeBy(val) {privateCounter += val;}  
+  return {  
+    increment: function() {changeBy(1)},  
+    decrement: function() {changeBy(-1);},  
+    value: function() {return privateCounter;}  
+  }  
+})();  
 
-console.log(counter.value()) //logs 0
-counter.increment();
-counter.increment();
-console.log(counter.value()) //logs 2
-counter.decrement();
+console.log(counter.value()) //logs 0  
+counter.increment();  
+counter.increment();  
+console.log(counter.value()) //logs 2  
+counter.decrement();  
 console.log(counter.value()) //logs 1  
 
 What is lexical scope
