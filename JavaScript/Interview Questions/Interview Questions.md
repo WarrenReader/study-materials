@@ -12,7 +12,6 @@ The position property has 5 expected values which are: static, relative, absolut
 The diplay property specifies the type of rendering box used for an element. HTML elements have their own default values which can be overridden. For example, div's are blocks and span's are inline. The most popular display property values are: inline, block, inline-block, flex, and none. Inline displays an element inline. Height and width properties have no effect. Block displays an element as a block. It starts on a new line and takes up the whole width. Inline-Block displays an element as inline, but it accepts height and width values. Flex displays an element as a block-level flex container. None completely removes the element from the flow of the document.  
 
 Describe how you would make a paper card effect in CSS (Like the products on Jane.com)  
-What are the different properties for position and how do they work  
 What is the difference between caret ( > ) comma ( , ) and space (  ) in a css selector
 How could you make a circle in CSS  
 Describe Pseudo selectors in CSS  
@@ -43,7 +42,27 @@ An advantage of this is you can invoke a function before it is declared. However
 
 It's important to note the variables declared with let and const are not treated the same as those declared with var. From ECMAScript 2015 -  "let will hoist the variable to the top of the block. However, referencing the variable in the block before the variable declaration results in a ReferenceError. The variable is in a "temporal dead zone" from the start of the block until the declaration is processed."  
 
-Describe closures and why they are important  
+**Describe closures**  
+A closure is an inner function that has access to the outer (enclosing) function's variables. The closure has three scope chanins: it has access to its own scope, it has access to the outer function's varaibles, and it has access to the global variables. Code Example:
+
+let counter = (function() {
+  let privateCounter = 0;
+  function changeBy(val) {privateCounter += val;}
+  return {
+    increment: function() {changeBy(1)},
+    decrement: function() {changeBy(-1);},
+    value: function() {return privateCounter;}
+  }
+})();
+
+console.log(counter.value()) //logs 0
+counter.increment();
+counter.increment();
+console.log(counter.value()) //logs 2
+counter.decrement();
+console.log(counter.value()) //logs 1  
+
+What is lexical scope
 Describe context  
 What’s the difference between a for loop and a for in loop  
 Explain let vs var  

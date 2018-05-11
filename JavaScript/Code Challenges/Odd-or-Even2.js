@@ -5,3 +5,15 @@
 //Sample Data
 //let samp = "2 4 7 8 10";
 //let samp2 = "1 2 2";
+
+//Solution 1
+function iqTest(nums){
+  let arr = nums.split(' ').map(e => Number(e)%2);
+  let even = arr.filter(e => e === 0).length;
+  let odd = arr.filter(e => e > 0).length;
+  if(even > odd) {
+    return arr.findIndex(e => e%2 > 0) + 1
+  } else {
+    return arr.findIndex(e => e%2 === 0) + 1
+  }
+}
