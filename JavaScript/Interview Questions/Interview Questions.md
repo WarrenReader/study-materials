@@ -11,7 +11,9 @@ The position property has 5 expected values which are: static, relative, absolut
 **What is the display property**  
 The diplay property specifies the type of rendering box used for an element. HTML elements have their own default values which can be overridden. For example, div's are blocks and span's are inline. The most popular display property values are: inline, block, inline-block, flex, and none. Inline displays an element inline. Height and width properties have no effect. Block displays an element as a block. It starts on a new line and takes up the whole width. Inline-Block displays an element as inline, but it accepts height and width values. Flex displays an element as a block-level flex container. None completely removes the element from the flow of the document.  
 
-What is specificity  
+**What is specificity**  
+Specificity is how browsers decide which CSS property values are most relevant to an element and will be applied. Specificity can be thought of as a score/rank applied to styling rules. Every selector in CSS holds a particular weight. For example, the element selector is worth 1 point, classes/attribute/pseudo-class selectors are worth 10, the id selector is worth 100, and inline styles are worth 1000. Inherited values and the universal selector (*) are worth 0. When two styles are competing and they have the same score/rank, the later declared style will be applied (last in, first out).  
+
 Describe how you would make a paper card effect in CSS (Like the products on Jane.com)  
 What is the difference between caret ( > ) comma ( , ) and space (  ) in a css selector
 How could you make a circle in CSS  
