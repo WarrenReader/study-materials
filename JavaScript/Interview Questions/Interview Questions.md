@@ -11,6 +11,7 @@ The position property has 5 expected values which are: static, relative, absolut
 **What is the display property**  
 The diplay property specifies the type of rendering box used for an element. HTML elements have their own default values which can be overridden. For example, div's are blocks and span's are inline. The most popular display property values are: inline, block, inline-block, flex, and none. Inline displays an element inline. Height and width properties have no effect. Block displays an element as a block. It starts on a new line and takes up the whole width. Inline-Block displays an element as inline, but it accepts height and width values. Flex displays an element as a block-level flex container. None completely removes the element from the flow of the document.  
 
+What is specificity  
 Describe how you would make a paper card effect in CSS (Like the products on Jane.com)  
 What is the difference between caret ( > ) comma ( , ) and space (  ) in a css selector
 How could you make a circle in CSS  
