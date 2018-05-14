@@ -91,4 +91,36 @@ What is unidirectional data flow in React
 Higher order components  
 
 #Computer Science
-What is Big O notation
+**What is Big O notation**  
+Big O Notation is a simplified analysis of an algorithm's efficiency. Good Resource: http://bigocheatsheet.com/  
+
+1. Big O measures complexity in terms of input size, n.  
+2. Big O is machine independent. It does not account for the machine the code is run on.  
+3. Big O examines the basic computer steps of the code.  
+4. Big O is used to analyize time and space.  
+5. Big O analyzes an algorithm's worst case efficieny.  
+
+General Rules  
+1. It ignores constants    5n --> O(n) instead of O(5n)  
+2. Certain terms "dominate" others  
+   O(1) < O(logn) < O(n) < O(nlogn) < O(n ^ 2) < O(2 ^ n) < O(n!)  
+   (Ignore low-order terms when higher terms exist)  
+
+Examples  
+  *Constant Time*: Does not depend on input size. O(1)  
+  x = 5 + (15 * 20);   O(1)  
+  y = 15 - 2;          O(1)  
+  print x + y;         O(1)  
+  
+  total time = O(1) + O(1) +  O(1)  
+              3 * O(1) = O(1)  (we drop constant, i.e. 3)  
+
+  *Linear Time*: Time to run changes based on input size. O(n)  
+  for x in range (o, n): print x;  
+  n * O(1) = O(n);  
+
+  *Quadratic Time*: For loop in a for loop. O(n^2)  
+  for(...) {  
+    for(...)  
+      console.log('something')  
+  }  
