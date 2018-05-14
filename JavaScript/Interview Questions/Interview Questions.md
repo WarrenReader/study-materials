@@ -90,7 +90,7 @@ How is React different from vanilla JS, jQuery, and Angular
 What is unidirectional data flow in React  
 Higher order components  
 
-#Computer Science
+# Computer Science  
 **What is Big O notation**  
 Big O Notation is a simplified analysis of an algorithm's efficiency. Good Resource: http://bigocheatsheet.com/  
 
