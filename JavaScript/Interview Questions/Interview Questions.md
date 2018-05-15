@@ -65,11 +65,14 @@ console.log(counter.value()) //logs 2
 counter.decrement();  
 console.log(counter.value()) //logs 1  
 
+**Describe square bracket notation and when you would use it**  
+Square bracket notation looks like this myArray[2] or myObject[thing]. When used with arrays, the value inside the square brackets represent an index within the array. It can be used to view values at that index or to assign values. When used with an object, the value within the square brackets represents a varaible which is assigned the key name on an object.
+
 What is lexical scope
-Describe context  
+Describe context
+Dot notation v. bracket notation
 What’s the difference between a for loop and a for in loop  
 Explain let vs var  
-Describe square bracket notation and when you would use it (hint arrays and objects)  
 Describe 3 es2015 features and how they differ from ES5  
 Describe how scoping works in JavaScript  
 What does the statement ‘use strict’ do   
