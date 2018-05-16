@@ -77,6 +77,11 @@ It's important to note the variables declared with let and const are not treated
 **Describe square bracket notation and when you would use it**  
 Square bracket notation looks like this myArray[2] and myObject[thing]. When used with arrays, the value inside the square brackets represent an index within the array. It can be used to view values at that index or to assign values. When used with an object, the value within the square brackets represents a varaible which is assigned the key name on an object.
 
+**What is strict mode?**  
+Strict mode makes it easier to write better and more secure JavaScript. It changes previously accepted 'bad syntax' into real errors. Some examples inclmude: you cannot create a variable without first declaring it, variables and functions cannot be deleted, and duplicate parameter names will throw an error. Also, it prohibits the use of specific keywords that may be used in the future like 'arguments' or 'eval'.  
+
+Strict mode can be applied to entire scrips or to individual functions. It does not apply to block statements enclosed in curly braces. To apply it to entire scripts place this statement at the top of the script file "use strict";. To apply it to functions put this statement at the top of the function's body "use strict";.  
+
 What is lexical scope
 Describe context
 Dot notation v. bracket notation
@@ -84,7 +89,6 @@ What’s the difference between a for loop and a for in loop
 Explain let vs var  
 Describe 3 es2015 features and how they differ from ES5  
 Describe how scoping works in JavaScript  
-What does the statement ‘use strict’ do   
 How does inheritance work in JavaScript  
 What is a prototype in JavaScript  
 
