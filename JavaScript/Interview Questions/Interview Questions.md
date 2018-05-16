@@ -62,7 +62,7 @@ To stop an event from bubbling you can use event.stopPropogation(). This functio
 Bubbling is one phase within event propagation. The first is the capturing phase, followed by the target phase, followed by the bubbling phase.  
 
 **What is event delegation?**  
-Event delegation refers to the process of using event bubbling to handle events at a higher level in the DOM than on the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future. A good example of when to use event delegation is when you've got a <ul> element with many <li> elements. If you need to handle the same event on each <li> element you can add it to the <ul>.
+Event delegation refers to the process of using event bubbling to handle events at a higher level in the DOM than on the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future. A good example of when to use event delegation is when you've got a *ul* element with many *li* elements. If you need to handle the same event on each *li* element you can add it to the *ul*.
 
 **What’s the difference between == and === in JavaScript**  
 == is loose equality and === is strict equality. Loose equality compares two values, but does not compare their data type, but rather uses type coercion. This means if the number 7 and the string "7" were compared using == then JavaScript would coerce "7" to be a number. As a result 7 == "7" would be true. Strict equality compares both type and value. It does not user coercion. This means 7 === "7" is false since we're comparing a number and a string.  
