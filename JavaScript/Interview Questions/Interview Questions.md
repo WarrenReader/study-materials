@@ -22,31 +22,10 @@ How could you make a star using CSS shapes only
 What is the transform property and how does it work  
 
 # JavaScript
-**What are higher order functions**  
-Higher order functions are functions which accept a function as an argument and/or return a function as a result.
+**Explain JavaScript closures**  
+A closure is an inner function (nested function) that has access to the outer (enclosing) function's variables. A closure has three scope chains: it has access to its own variables, it has access to the outer function's varaibles, and it has access to global variables. Closures take a 'snapshot' of the outer function's variables and remembers their values after the outer function has finished running. In other words, JavaScript keeps the outer function's varaibles alive because the closure references them. The closure retains state and scope.  
 
-**What are callback functions**  
-A callback function is a function passed into another function as an argument, which is then invoked inside the outer function. There are both synchronous and asynchronous callbacks.
-
-**What’s the difference between == and === in JavaScript**  
-== is loose equality and === is strict equality. Loose equality compares two values, but does not compare their data type, but rather uses type coercion. This means if the number 7 and the string "7" were compared using == then JavaScript would coerce "7" to be a number. As a result 7 == "7" would be true. Strict equality compares both type and value. It does not user coercion. This means 7 === "7" is false since we're comparing a number and a string.
-
-**What is event bubbling in the DOM**  
-When an event (i.e. click, mouseover, etc.) happens on an HTML element, it will trigger any handlers that element may have, then pass the event to its parent. This event 'bubbles' up the chain of ancestors, triggering their handlers as well. This process is called bubbling, because events 'bubble' up the HTML tree until the event hits the document object and sometimes even the window object. It's important to note that not all events bubble. For example, a focus event does not bubble. The element that triggered the event is called the target element, and is accessible through event.target.  
-
-To stop an event from bubbling you can use event.stopPropogation(). This function will stop the event from moving upwards, but will allow the element triggering this function to run all of it's event handlers. To prevent handlers on the current element from running use event.stopImmediatePropogation(). However, you shouldn't stop bubbling without a good reason!  
-
-Bubbling is one phase within event propagation. The first is the capturing phase, followed by the target phase, followed by the bubbling phase.  
-
-**What is hoisting**  
-Variable and function declarations are put into memory during the compile phase. This allows varabiles and function declarations to be referenced before they are declared in code. Manytimes people describe this action as 'moving declared variables and functions to the top of the scope' (i.e. hoisted), but in reality the code stays in place.
-
-An advantage of this is you can invoke a function before it is declared. However, this does not work with function expressions. The same is true with varaibles. If a variable is declared with var, it can be referenced before it is declared in the code, however, it will have a value of undefined since initializations are not hoisted.
-
-It's important to note the variables declared with let and const are not treated the same as those declared with var. From ECMAScript 2015 -  "let will hoist the variable to the top of the block. However, referencing the variable in the block before the variable declaration results in a ReferenceError. The variable is in a "temporal dead zone" from the start of the block until the declaration is processed."  
-
-**Describe closures**  
-A closure is an inner function that has access to the outer (enclosing) function's variables. The closure has three scope chanins: it has access to its own scope, it has access to the outer function's varaibles, and it has access to the global variables. Code Example:
+Code Example:  
 
 let counter = (function() {  
   let privateCounter = 0;  
@@ -65,8 +44,38 @@ console.log(counter.value()) //logs 2
 counter.decrement();  
 console.log(counter.value()) //logs 1  
 
+
+**What is a first-class function?**  
+Functions in JavaScript are first-class objects, meaning everything you can do with other types you can do with functions. Functions can be assigned to variables, they can be passed as an argument to another function, they can be returned from another function.  
+
+**What are higher order functions**  
+Higher order functions are functions which accept a function as an argument and/or return a function as a result.
+
+**What are callback functions?**  
+A callback function is a function passed into another function as an argument, which is then invoked inside the outer function. There are both synchronous and asynchronous callbacks.
+
+**What is event bubbling in the DOM?**  
+When an event (i.e. click, mouseover, etc.) happens on an HTML element, it will trigger any handlers that element may have, then pass the event to its parent. This event 'bubbles' up the chain of ancestors, triggering their handlers as well. This process is called bubbling, because events 'bubble' up the HTML tree until the event hits the document object and sometimes even the window object. It's important to note that not all events bubble. For example, a focus event does not bubble. The element that triggered the event is called the target element, and is accessible through event.target.  
+
+To stop an event from bubbling you can use event.stopPropogation(). This function will stop the event from moving upwards, but will allow the element triggering this function to run all of it's event handlers. To prevent handlers on the current element from running use event.stopImmediatePropogation(). However, you shouldn't stop bubbling without a good reason!  
+
+Bubbling is one phase within event propagation. The first is the capturing phase, followed by the target phase, followed by the bubbling phase.  
+
+**What is event delegation?**  
+Event delegation refers to the process of using event bubbling to handle events at a higher level in the DOM than on the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future. A good example of when to use event delegation is when you've got a <ul> element with many <li> elements. If you need to handle the same event on each <li> element you can add it to the <ul>.
+
+**What’s the difference between == and === in JavaScript**  
+== is loose equality and === is strict equality. Loose equality compares two values, but does not compare their data type, but rather uses type coercion. This means if the number 7 and the string "7" were compared using == then JavaScript would coerce "7" to be a number. As a result 7 == "7" would be true. Strict equality compares both type and value. It does not user coercion. This means 7 === "7" is false since we're comparing a number and a string.  
+
+**What is hoisting**  
+Variable and function declarations are put into memory during the compile phase. This allows varabiles and function declarations to be referenced before they are declared in code. Manytimes people describe this action as 'moving declared variables and functions to the top of the scope' (i.e. hoisted), but in reality the code stays in place.  
+
+An advantage of this is you can invoke a function before it is declared. However, this does not work with function expressions. The same is true with varaibles. If a variable is declared with var, it can be referenced before it is declared in the code, however, it will have a value of undefined since initializations are not hoisted.  
+
+It's important to note the variables declared with let and const are not treated the same as those declared with var. From ECMAScript 2015 -  "let will hoist the variable to the top of the block. However, referencing the variable in the block before the variable declaration results in a ReferenceError. The variable is in a "temporal dead zone" from the start of the block until the declaration is processed."  
+
 **Describe square bracket notation and when you would use it**  
-Square bracket notation looks like this myArray[2] or myObject[thing]. When used with arrays, the value inside the square brackets represent an index within the array. It can be used to view values at that index or to assign values. When used with an object, the value within the square brackets represents a varaible which is assigned the key name on an object.
+Square bracket notation looks like this myArray[2] and myObject[thing]. When used with arrays, the value inside the square brackets represent an index within the array. It can be used to view values at that index or to assign values. When used with an object, the value within the square brackets represents a varaible which is assigned the key name on an object.
 
 What is lexical scope
 Describe context
