@@ -82,6 +82,7 @@ Strict mode makes it easier to write better and more secure JavaScript. It chang
 
 Strict mode can be applied to entire scrips or to individual functions. It does not apply to block statements enclosed in curly braces. To apply it to entire scripts place this statement at the top of the script file "use strict";. To apply it to functions put this statement at the top of the function's body "use strict";.  
 
+What is the difference between events, event handlers, and event listeners?
 What is lexical scope
 Describe context
 Dot notation v. bracket notation
